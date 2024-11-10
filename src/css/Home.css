@@ -1,0 +1,148 @@
+/* Reklam Banner'ı */
+.ad-banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Kutu sağa yaslansın */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ekranı tamamen kaplasın */
+  position: relative;
+  background-color: black; /* Arka planı siyah yap */
+  overflow: hidden; /* Taşan içerikleri gizler */
+}
+
+.ad-content {
+  background-color: rgba(0, 0, 0, 0.7); /* Kutu siyah yarı saydam */
+  padding: 2rem;
+  width: 300px; /* Kutu genişliği */
+  color: #fff;
+  position: absolute;
+  right: 0; /* Sağ tarafta konumlanacak */
+  top: 0; /* Yükseklik açısından en üstte olacak */
+  height: 100vh; /* Kutu yüksekliği ekran yüksekliği kadar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ad-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.ad-content p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+/* Reklam Geçiş Noktaları */
+.ad-navigation {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ad-dot {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ad-dot.active {
+  background-color: #fff;
+}
+
+/* Haberler Bölümü */
+.news-section {
+  background-color: #f9f9f9;
+  padding: 3rem 2rem;
+}
+
+.news-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.news-item {
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.news-item p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Ekip ve Firma Bilgisi */
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.info-box {
+  background-color: #fff;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.info-box p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
